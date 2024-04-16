@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .project-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .project-item {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      transition: background-color 0.3s ease;
+    }
+
+    .project-item:hover {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>My Projects</h1>
+  <ul class="project-list" id="project-list">
+    <!-- JavaScript will populate this list -->
+  </ul>
+</div>
+
+<script>
+  // Sample project data
+  const projects = [
+    { name: "Project 1", description: "Description of Project 1", link: "project1.html" },
+    { name: "Project 2", description: "Description of Project 2", link: "project2.html" },
+    { name: "Project 3", description: "Description of Project 3", link: "project3.html" }
+    // Add more projects as needed
+  ];
+
+  // Function to populate project list
+  function populateProjectList() {
+    const projectList = document.getElementById('project-list');
+    projects.forEach(project => {
+      const listItem = document.createElement('li');
+      listItem.classList.add('project-item');
+      listItem.innerHTML = `
+        <h3>${project.name}</h3>
+        <p>${project.description}</p>
+        <a href="${project.link}" target="_blank">View Project</a>
+      `;
+      projectList.appendChild(listItem);
+    });
+  }
+
+  // Call the function to populate the list
+  populateProjectList();
+</script>
+
+</body>
+</html>
