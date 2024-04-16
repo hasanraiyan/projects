@@ -19,8 +19,7 @@ function calculate(){
 
 function backspace() {
     let info = display.value;
-    for (i in info){
-        console.log(i);
-    }
+    let newWord = info.slice(0, -1)
+    display.value = newWord;
     
 }
