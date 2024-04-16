@@ -16,3 +16,11 @@ function calculate(){
         display.value="Error"
     }
 }
+
+function backspace() {
+    let info = display.value;
+    for (i in info){
+        console.log(i);
+    }
+    
+}
