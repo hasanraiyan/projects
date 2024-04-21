@@ -12,10 +12,9 @@
 
 <body>
     <div id="calculator">
-        <input readonly id="display">
+        <input disabled id="display" type="text">
         <div id="keys">
             <button onclick="backspace()" class="operator-btn"><i class="fas fa-backspace" style="font-size: 2.5rem;"></i></button>
-
             <button onclick="appendToDisplay('(')" class="operator-btn">(</button>
             <button onclick="appendToDisplay(')')" class="operator-btn">)</button>
             <button onclick="clearDisplay()" class="operator-btn" >C</button>
@@ -23,7 +22,6 @@
             <button onclick="appendToDisplay('8')">8</button>
             <button onclick="appendToDisplay('9')">9</button>
             <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
-
             <button onclick="appendToDisplay('4')">4</button>
             <button onclick="appendToDisplay('5')">5</button>
             <button onclick="appendToDisplay('6')">6</button>
