@@ -11,6 +11,9 @@ img {
 html {
   scroll-behavior: smooth;
 }
+.nowrap{
+  white-space: nowrap;
+}
 body {
   font: 1.5rem Cursive;
   min-width: 100vh;
