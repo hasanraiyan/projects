@@ -50,7 +50,7 @@
         <div class="cell" onclick="handleMove(7)"></div>
         <div class="cell" onclick="handleMove(8)"></div>
     </div>
-    <button id="restartButton" style="display: none;" onclick="resetBoard()">Restart Game</button>
+
 
     <script>
         let currentPlayer = 'X';
@@ -157,12 +157,10 @@
             currentPlayer = 'X';
             gameEnded = false;
             document.getElementById('turn').innerText = "Player " + currentPlayer + "'s turn";
-            document.getElementById('restartButton').style.display = 'none';
+      
         }
 
-        function showRestartButton() {
-            document.getElementById('restartButton').style.display = 'block';
-        }
+    
     </script>
 </body>
 </html>
