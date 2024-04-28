@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --box:45px;
+    --font-size:1.8rem;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-container{
+    height: calc(15*var(--box));
+    width: calc(15*var(--box));
+    outline: 2px solid rgb(0, 0, 0);
+    display: flex;
+}
+.column-left, .column-right{
+    width: calc(6*var(--box));
+    height:calc(6*var(--box));
+  
+}
+.column-middle{
+    width: calc(3*var(--box));
+    /* border: 2px solid red; */
+}
+.home{
+    width: calc(6*var(--box));
+    height:calc(6*var(--box));
+    /* border: 2px solid black; */
+    padding: var(--box);
+}
+
+.home .rooms{
+    /* border: 2px solid red; */
+    width: calc(4*var(--box));
+    height: calc(4*var(--box));
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+ 
+
+    
+}
+.room{
+
+ /* border: 3px solid red; */
+ /* border-radius: 50%; */
+ height: calc(2*var(--box));
+ width: calc(2*var(--box));   
+
+ /* margin: 100px; */
+}
+.room div{
+    height: var(--box);
+    width:var(--box);
+    margin: calc(44*var(--box)/100);
+    /* border: 4px solid red; */
+    border-radius: 50%;
+}
+.column-left .home{
+
+}
+.road-left{
+    height: calc(3*var(--box));
+    width: calc(6*var(--box));
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+}
+.top-road, .middle-road, .bottom-road{
+    height: var(--box);
+    width: calc(6*var(--box));   
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+.box{
+    height: var(--box);
+    width: var(--box);
+    border: 1px solid black;
+}
+.win{
+    height:calc(3*var(--box)) ;
+    width:calc(3*var(--box));
+    border: 2px solid black;
+    border-top: calc(var(--box)*3/2) solid green;
+    border-left: calc(var(--box)*3/2) solid red;
+    border-bottom: calc(var(--box)*3/2) solid blue;
+    border-right: calc(var(--box)*3/2) solid yellow;
+}
+.road-right{
+    height: calc(var(--box)*6);
+    width: calc(var(--box)*3);
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
+.bgc{
+    background-color: #CCC;
+}
+
+
+.normal{
+    background-color: #f07485;
+}
+.border-red{
+    border: 4px solid red;
+}
+.border-blue{
+    border: 4px solid blue;
+}
+.border-green{
+    border: 4px solid green;
+}
+.border-yellow{
+    border: 4px solid yellow;
+}
+.star{
+    font-size:var(--font-size);
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+    vertical-align: center;
+    justify-content: center;
+}
