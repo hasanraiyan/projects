@@ -1,0 +1,96 @@
+@media (max-width:1024px) {
+    :root{
+        --box:57px;
+        --font-size:45px;
+    }
+    main{
+        margin-top: 15rem;
+    }
+    
+}
+@media (max-width:820px) {
+    :root{
+        --box:44px;
+        --font-size:30px;
+    }
+    main{
+        margin-top: 14rem;
+    }
+    
+}
+
+@media (max-width:769px) {
+    :root{
+        --box:42px;
+        --font-size:30px;
+    }
+    main{
+        margin-top: 10rem;
+    }
+    
+}
+@media (max-width:540px) {
+    :root{
+        --box:32px;
+        --font-size:30px;
+    }
+    main{
+        margin-top: 5.5rem;
+    }
+    
+}
+@media (max-width:430px) {
+    :root{
+        --box:26px;
+        --font-size:25px;
+    }
+    main{
+        margin-top: 15rem;
+    }
+}
+@media (max-width:415px) {
+    :root{
+        --box:25px;
+        --font-size:25px;
+    }
+    main{
+        margin-top: 15rem;
+    }
+}
+@media (max-width:391px) {
+    :root{
+        --box:23px;
+        --font-size:.8rem;
+    }
+
+    main{
+        margin-top: 14rem;
+    }
+}
+
+@media (max-width:380px) {
+    :root{
+        --box:23px;
+        --font-size:3rem;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        /* margin-top: 10rem; */
+    }
+    main{
+        margin-top: 9rem;
+    }
+}
+@media (max-width:360px) {
+    :root{
+        --box:21px;
+        --font-size:25px;
+    }
+    main{
+        margin-top: 13rem;
+    }
+}
